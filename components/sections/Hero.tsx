@@ -46,24 +46,24 @@ const Hero = () => {
         <motion.div className="text-center space-y-12" variants={containerVariants} initial="hidden" animate="visible">
           {/* Main Heading */}
           <motion.div variants={itemVariants} className="space-y-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold">
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold">
               <span className="bg-gradient-to-r from-white via-purple-100 to-violet-200 bg-clip-text text-transparent">
-                Tu estudio,
+                Wiora transforma tus documentos en
               </span>
               <br />
               <span className="bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">
-                a tu medida
+                 experiencias de aprendizaje
               </span>
             </h1>
           </motion.div>
+          
 
           {/* Subtitle */}
           <motion.p
             className="text-xl md:text-2xl text-purple-100 max-w-4xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            ¿Y si el aprendizaje pudiera adaptarse a vos, y no al revés? Wiora transforma tu contenido desordenado en un
-            camino de aprendizaje claro, estructurado y personalizado.
+           Carga tus PDFs y documentos. Nuestra IA crea procesos de aprendizaje personalizados, cuestionarios interactivos y rutas de estudio adaptadas a tu ritmo.
           </motion.p>
 
           {/* CTA Buttons */}
