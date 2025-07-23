@@ -18,8 +18,10 @@ export default function HomePage() {
           <Features />
           <HowItWorks />
           <Testimonials />
+          <section>
           <WaitlistSection />
           <FAQ/>
+          </section>
         </main>
         <Footer />
         <Toaster />
