@@ -148,7 +148,11 @@ const FAQ = () => {
               Estamos aquí para ayudarte.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a rel="stylesheet" href="https://discord.gg/SdJz3DsQ">
+              <a
+                href="https://discord.gg/SdJz3DsQ"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <button className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5" />
                   Discord
