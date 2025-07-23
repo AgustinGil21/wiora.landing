@@ -7,6 +7,8 @@ import WioraLogo from "../WioraLogo";
 const Footer = () => {
   const { toast } = useToast();
 
+  const year = new Date().getFullYear()
+
   const handleFeatureClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -100,7 +102,7 @@ const Footer = () => {
 
         <div className="border-t border-purple-300/20 mt-8 pt-8 text-center">
           <p className="text-purple-200">
-            © 2025 Wiora. Todos los derechos reservados.
+            © {year} Wiora. Todos los derechos reservados.
           </p>
         </div>
       </div>
