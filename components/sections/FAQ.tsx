@@ -92,7 +92,7 @@ const FAQ = () => {
         </motion.div>
 
         <motion.div
-          className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-purple-300/20"
+          className="bg-white/10 backdrop-blur-md rounded-3xl px-2 py-6 sm:p-8 border border-purple-300/20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -148,11 +148,7 @@ const FAQ = () => {
               Estamos aquí para ayudarte.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://discord.gg/SdJz3DsQ"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a rel="stylesheet" href="https://discord.gg/SdJz3DsQ">
                 <button className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5" />
                   Discord
