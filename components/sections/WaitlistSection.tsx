@@ -28,7 +28,6 @@ const WaitlistSection = () => {
     }
 
     setIsLoading(true)
-    console.log(email)
 
     try {
       const formData = new FormData();
