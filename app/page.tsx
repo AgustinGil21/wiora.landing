@@ -6,6 +6,7 @@ import HowItWorks from "@/components/sections/HowItWorks"
 import Testimonials from "@/components/sections/Testimonials"
 import WaitlistSection from "@/components/sections/WaitlistSection"
 import Footer from "@/components/layout/Footer"
+import FAQ from "@/components/sections/FAQ"
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
           <HowItWorks />
           <Testimonials />
           <WaitlistSection />
-          
+          <FAQ/>
         </main>
         <Footer />
         <Toaster />

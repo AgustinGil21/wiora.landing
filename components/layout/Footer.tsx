@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useToast } from "@/hooks/use-toast"
+import WioraLogo from "../WioraLogo"
 
 const Footer = () => {
   const { toast } = useToast()
@@ -21,10 +22,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-violet-500 rounded-full flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-2xl">W</span>
-              </div>
-              <span className="text-2xl font-bold text-white">Wiora</span>
+              <span className="text-2xl font-bold text-white">
+                <WioraLogo/>
+              </span>
             </div>
             <p className="text-purple-200 mb-4 max-w-md">
             “La mente no es un vaso por llenar, sino una lámpara por encender.”
@@ -43,12 +43,12 @@ const Footer = () => {
               </li>
               <li>
                 <button onClick={handleFeatureClick} className="text-purple-200 hover:text-white transition-colors">
-                  Precios
+                  Testimonios
                 </button>
               </li>
               <li>
                 <button onClick={handleFeatureClick} className="text-purple-200 hover:text-white transition-colors">
-                  Demo
+                  Como funciona
                 </button>
               </li>
             </ul>

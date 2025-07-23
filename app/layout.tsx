@@ -6,10 +6,12 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Wiora - IA para Planes de Estudio Personalizados",
+  title: "Wiora AI",
   description:
     "Descubre Wiora, la inteligencia artificial que crea planes de estudio personalizados para ayudarte a estudiar de forma eficiente y práctica. ¡Aprende mejor con nuestra mascota coala!",
-    generator: 'v0.dev'
+      icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
