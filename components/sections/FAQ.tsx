@@ -98,7 +98,7 @@ const FAQ = () => {
                       </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className='text-purple-200 leading-relaxed text-base px-14 pb-6 pointer-events-none'>
+                  <AccordionContent className='text-purple-200 leading-relaxed text-base px-14 pb-6'>
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
