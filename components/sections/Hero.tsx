@@ -76,7 +76,7 @@ const Hero = () => {
           >
             {/* Main Heading */}
             <motion.div variants={itemVariants} className='space-y-8'>
-              <h1 className='text-5xl md:text-6xl lg:text-6xl font-bold'>
+              <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold'>
                 <span className='bg-gradient-to-r from-white via-purple-100 to-violet-200 bg-clip-text text-transparent'>
                   Wiora transforma tus documentos en
                 </span>
