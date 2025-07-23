@@ -16,6 +16,7 @@ const WaitlistSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    const sentAt = new Date().toISOString()
 
     if (!email || !email.includes("@")) {
       toast({
@@ -27,17 +28,44 @@ const WaitlistSection = () => {
     }
 
     setIsLoading(true)
+    console.log(email)
 
-    // Simular envío (aquí iría la integración real)
-    setTimeout(() => {
-      setIsSubmitted(true)
-      setIsLoading(false)
+    try {
+      const formData = new FormData();
+      formData.append("email", email);
+      formData.append("_honey", "");
+      formData.append("_captcha", "false");
+
+  
+      await fetch("https://formsubmit.co/ajax/28221a9c26f44f3a329d233218ae88fc", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          sentAt: sentAt
+        }),
+      });
+  
+      setIsLoading(false);
+      setEmail("")
+  
       toast({
         title: "¡Bienvenido a la revolución! 🚀",
         description: "Te notificaremos cuando Wiora esté listo para transformar tu forma de estudiar.",
         duration: 5000,
-      })
-    }, 1000)
+      });
+    } catch (err) {
+      setIsLoading(false);
+      setEmail("")
+      toast({
+        title: "Algo salió mal",
+        description: "No pudimos enviar el mail a destino. Por favor intentalo más tarde.",
+        duration: 3000,
+      });
+    }
   }
 
   const benefits = [
@@ -85,7 +113,7 @@ const WaitlistSection = () => {
           viewport={{ once: true }}
         >
           {!isSubmitted ? (
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form className="space-y-8" onSubmit={handleSubmit}>
               <div className="text-center mb-8">
                 <Mail className="w-16 h-16 text-purple-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-4">Lista de espera exclusiva</h3>
@@ -95,6 +123,7 @@ const WaitlistSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                
                 <Input
                   type="email"
                   placeholder="tu@email.com"
