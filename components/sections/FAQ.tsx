@@ -1,57 +1,79 @@
-"use client"
-import { motion } from "framer-motion"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { HelpCircle, MessageCircle, Shield, Globe, DollarSign, Upload, Users, Clock } from "lucide-react"
+'use client';
+import { motion } from 'framer-motion';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+import {
+  HelpCircle,
+  MessageCircle,
+  Shield,
+  Globe,
+  DollarSign,
+  Upload,
+  Users,
+  Clock,
+} from 'lucide-react';
 
 const FAQ = () => {
-
-
   const faqItems = [
     {
-      id: "¿Qué es Wiora?",
+      id: '¿Qué es Wiora?',
       icon: HelpCircle,
-      question: "¿Qué es Wiora?",
-      answer: "Wiora es una plataforma educativa impulsada por inteligencia artificial que convierte tus apuntes, guías o PDFs en un plan de estudio estructurado y adaptado a vos. Está diseñada para quienes estudian con autonomía y buscan claridad, orden y acompañamiento real en su proceso.",
-      color: "from-purple-500 to-violet-600",
+      question: '¿Qué es Wiora?',
+      answer:
+        'Wiora es una plataforma educativa impulsada por inteligencia artificial que convierte tus apuntes, guías o PDFs en un plan de estudio estructurado y adaptado a vos. Está diseñada para quienes estudian con autonomía y buscan claridad, orden y acompañamiento real en su proceso.',
+      color: 'from-purple-500 to-violet-600',
     },
     {
-      id: "¿Cómo funciona?",
+      id: '¿Cómo funciona?',
       icon: MessageCircle,
-      question: "¿Cómo funciona?",
-      answer: "Solo tenés que subir tu contenido de estudio (PDFs, textos, guías, etc.), y Wiora lo transforma en un recorrido guiado con niveles, ejercicios y retroalimentación. La IA organiza el contenido, prioriza lo importante y genera actividades para ayudarte a aprender de forma activa.",
-      color: "from-violet-500 to-indigo-600",
+      question: '¿Cómo funciona?',
+      answer:
+        'Solo tenés que subir tu contenido de estudio (PDFs, textos, guías, etc.), y Wiora lo transforma en un recorrido guiado con niveles, ejercicios y retroalimentación. La IA organiza el contenido, prioriza lo importante y genera actividades para ayudarte a aprender de forma activa.',
+      color: 'from-violet-500 to-indigo-600',
     },
     {
-      id: "¿Es gratis?",
+      id: '¿Es gratis?',
       icon: Upload,
-      question: "¿Es gratis?",
-      answer: "Sí. Wiora tiene una versión gratuita que te permite acceder a todas las funciones esenciales. En el futuro ofreceremos una versión premium con beneficios adicionales, pero el acceso básico será siempre gratuito y sin tarjeta de crédito.",
-      color: "from-indigo-500 to-purple-600",
+      question: '¿Es gratis?',
+      answer:
+        'Sí. Wiora tiene una versión gratuita que te permite acceder a todas las funciones esenciales. En el futuro ofreceremos una versión premium con beneficios adicionales, pero el acceso básico será siempre gratuito y sin tarjeta de crédito.',
+      color: 'from-indigo-500 to-purple-600',
     },
-  ]
+  ];
 
   return (
-    <section id="faq" className="py-24 px-4 bg-gradient-to-r from-indigo-900/30 to-purple-900/30">
-      <div className="max-w-4xl mx-auto">
+    <section
+      id='faq'
+      className='py-24 px-4 bg-gradient-to-r from-indigo-900/30 to-purple-900/30'
+    >
+      <div className='max-w-4xl mx-auto'>
         <motion.div
-          className="text-center mb-16"
+          className='text-center mb-16'
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Preguntas Frecuentes</h2>
-          <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">Aquí encontrarás respuestas a las preguntas más comunes sobre Wiora.</p>
+          <h2 className='text-4xl md:text-5xl font-bold text-white mb-8'>
+            Preguntas Frecuentes
+          </h2>
+          <p className='text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed'>
+            Aquí encontrarás respuestas a las preguntas más comunes sobre Wiora.
+          </p>
         </motion.div>
 
         <motion.div
-          className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-purple-300/20"
+          className='bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-purple-300/20'
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type='single' collapsible className='space-y-4'>
             {faqItems.map((item, index) => (
               <motion.div
                 key={item.id}
@@ -62,19 +84,21 @@ const FAQ = () => {
               >
                 <AccordionItem
                   value={item.id}
-                  className="bg-white/5 backdrop-blur-sm rounded-2xl border border-purple-300/20 px-6 hover:bg-white/10 transition-all duration-300"
+                  className='bg-white/5 backdrop-blur-sm rounded-2xl border border-purple-300/20 px-6 hover:bg-white/10 transition-all duration-300'
                 >
-                  <AccordionTrigger className="text-white hover:text-purple-200 py-6 text-left">
-                    <div className="flex items-center gap-4">
+                  <AccordionTrigger className='text-white hover:text-purple-200 py-6 text-left'>
+                    <div className='flex items-center gap-4'>
                       <div
                         className={`w-10 h-10 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center flex-shrink-0`}
                       >
-                        <item.icon className="w-5 h-5 text-white" />
+                        <item.icon className='w-5 h-5 text-white' />
                       </div>
-                      <span className="text-lg font-semibold">{item.question}</span>
+                      <span className='text-lg font-semibold'>
+                        {item.question}
+                      </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="text-purple-200 leading-relaxed text-base px-14 pb-6">
+                  <AccordionContent className='text-purple-200 leading-relaxed text-base px-14 pb-6 pointer-events-none'>
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -84,33 +108,34 @@ const FAQ = () => {
         </motion.div>
 
         <motion.div
-          className="text-center mt-12"
+          className='text-center mt-12'
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-purple-600/20 to-violet-600/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-300/30">
-            <h3 className="text-xl font-bold text-white mb-4">
-                 "¿Tenés más preguntas?
+          <div className='bg-gradient-to-r from-purple-600/20 to-violet-600/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-300/30'>
+            <h3 className='text-xl font-bold text-white mb-4'>
+              "¿Tenés más preguntas?
             </h3>
-            <p className="text-purple-200 mb-6">
-                Únete a nuestra comunidad en Discord o escribinos directamente. Estamos aquí para ayudarte.
+            <p className='text-purple-200 mb-6'>
+              Únete a nuestra comunidad en Discord o escribinos directamente.
+              Estamos aquí para ayudarte.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
-                <MessageCircle className="w-5 h-5" />
-               Discord
+            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+              <button className='bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2'>
+                <MessageCircle className='w-5 h-5' />
+                Discord
               </button>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300">
-               Contacto
+              <button className='bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300'>
+                Contacto
               </button>
             </div>
           </div>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;
