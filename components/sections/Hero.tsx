@@ -36,18 +36,21 @@ const Hero = () => {
   const stats = [
     {
       icon: Users,
-      value: "65%",
-      label: "de estudiantes se siente abrumado por la información",
-    },
-    {
-      icon: BookOpen,
-      value: "50%",
-      label: "abandona sus carreras por falta de organización",
+      value: "62%",
+      label:
+        "De los estudiantes en línea se siente abrumado por la cantidad de contenido, lo cual impacta negativamente su capacidad de retención.",
     },
     {
       icon: TrendingUp,
-      value: "33%",
-      label: "ya usa IA para estudiar, pero sin método",
+      value: "270 Millones",
+      label:
+        "De personas en Latinoamérica ya incorporan herramientas como ChatGPT, y buscadores con IA para sus rutinas cotidianas,aprendizaje y estudio.",
+    },
+    {
+      icon: BookOpen,
+      value: "73%",
+      label:
+        "Se siente inseguro al tomar decisiones debido al exceso de información, 9 de cada 10 estudiantes reportan haber sufrido infoxicación",
     },
   ];
 
