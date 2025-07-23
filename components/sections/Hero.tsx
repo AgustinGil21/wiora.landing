@@ -108,35 +108,24 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               variants={itemVariants}
             >
-              <Button
-                size="lg"
-                className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-3 text-lg"
-                onClick={handleScrollToWaitlist}
-              >
-                Únete a la lista de espera
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
               {/* <Button
                 size="lg"
-                className="bg-white text-purple-900 hover:bg-purple-50 px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 group font-semibold"
+                className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-3 text-lg"
+          
               >
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+         
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button> */}
+              <Button
+                onClick={handleScrollToWaitlist}
+                size="lg"
+                className="bg-white text-purple-900 hover:bg-purple-50 px-8 py-7 text-lg rounded-full shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 group font-semibold"
+              >
+                {" "}
+                Únete a la lista de espera
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </motion.div>
-            <div className="flex items-center gap-8 text-sm text-gray-500">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-purple-600" />
-                Enfocado en tus objetivos
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-purple-600" />
-                Estudiá cuando quieras
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-purple-600" />
-                IA que se adapta a vos
-              </div>
-            </div>
           </section>
 
           {/* Problem Stats */}
