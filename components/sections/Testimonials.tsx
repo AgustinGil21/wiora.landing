@@ -5,30 +5,30 @@ import { Quote } from "lucide-react"
 const Testimonials = () => {
   const testimonialsData = [
     {
-      name: "Lucas Steckler",
-      role: "Co-fundador de Wiora",
+      name: "Kiara Vexina",
+      role: "Estudiante de la UCA",
       content:
-        "Como estudiante universitario, sé lo frustrante que puede ser enfrentarse a una montaña de contenidos desordenados, sin una guía clara. Wiora nace de esa necesidad real.",
-      category: "Fundador",
+       "Me entusiasma mucho la idea. Me la paso organizando apuntes, videos y libros sin saber si voy bien. Si una IA puede armarme un camino y darme feedback, eso cambia todo.",
+      category: "Estudiante",
     },
     {
-      name: "Agustín Gil",
-      role: "Co-fundador de Wiora",
+      name: "Marcos Femia",
+      role: "Estudiante de la UB ",
       content:
-        "Creemos que la tecnología educativa todavía tiene mucho por evolucionar. Hay una enorme oportunidad en ofrecer soluciones más humanas, flexibles y accesibles.",
-      category: "Fundador",
+        "Siempre me costó empezar a estudiar porque no sabía cómo organizar todo lo que tenía. Esta idea de convertir mis propios apuntes en un recorrido guiado me parece genial. No es más contenido, es una guía.",
+      category: "Estudiante",
     },
     {
-      name: "Estudiante Universitario",
-      role: "Target Principal",
+      name: "Maximo Glaus",
+      role: "Autodidacta",
       content:
-        "Muchas veces no es que falte voluntad para estudiar, sino una herramienta que nos ayude a organizar, priorizar y transformar ese contenido en un proceso de aprendizaje claro.",
-      category: "Usuario Objetivo",
+        "No es que me falte voluntad para aprender, sino una herramienta que me ayude a organizar, priorizar y transformar ese contenido en un proceso más amigable y adaptado.",
+      category: "Estudiante Autodidacta",
     },
   ]
 
   return (
-    <section id="testimonials" className="py-24 px-4">
+    <section id="testimonials" className="py-18 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-20"
@@ -41,8 +41,7 @@ const Testimonials = () => {
             Una <span className="text-purple-300">necesidad real</span>
           </h2>
           <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-            Wiora nace de la experiencia directa de quienes enfrentan el desafío de aprender con autonomía en un mundo
-            lleno de información desordenada.
+            Inspirada en la experiencia real de estudiantes y autodidactas, Wiora existe para transformar la sobreinformación en un proceso claro y personalizado.
           </p>
         </motion.div>
 
@@ -87,11 +86,10 @@ const Testimonials = () => {
           <div className="bg-gradient-to-r from-purple-600/20 to-violet-600/20 backdrop-blur-sm rounded-2xl p-10 border border-purple-300/30 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-6">Nuestro compromiso</h3>
             <p className="text-purple-200 leading-relaxed text-lg mb-6">
-              "No venimos del mundo corporativo ni de incubadoras: venimos del deseo genuino de resolver un problema que
-              sentimos cerca, todos los días. Cada funcionalidad que diseñamos está pensada desde la experiencia real de
-              quien necesita aprender con claridad."
+              "Cada botón, cada paso, cada función de Wiora nace de situaciones reales. No estamos adivinando lo que el estudiante necesita: lo vivimos. Por eso no creamos una plataforma perfecta, sino una que escucha y evoluciona con vos."
+             
             </p>
-            <p className="text-purple-300 font-medium">- Lucas y Agustín, Fundadores de Wiora</p>
+            <p className="text-purple-300 font-medium">- Equipo de Wiora</p>
           </div>
         </motion.div>
       </div>

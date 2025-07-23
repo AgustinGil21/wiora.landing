@@ -44,17 +44,17 @@ const WaitlistSection = () => {
     {
       icon: Rocket,
       title: "Acceso temprano",
-      description: "Sé de los primeros en probar Wiora antes del lanzamiento público",
+      description: "Sé de los primeros en descubrir cómo será el futuro del estudio.",
     },
     {
       icon: Users,
-      title: "Comunidad exclusiva",
-      description: "Únete a nuestro Discord y ayuda a co-crear la experiencia",
+      title: "Comunidad Wiora",
+      description: "Únete a nuestra comunidad y ayuda a co-crear la experiencia",
     },
     {
       icon: CheckCircle,
-      title: "Sin compromiso",
-      description: "Gratis para siempre, sin tarjeta de crédito requerida",
+      title: "Tu voz importa",
+      description: "Sé parte del grupo que diseña la experiencia Wiora desde cero.",
     },
   ]
 
@@ -90,7 +90,7 @@ const WaitlistSection = () => {
                 <Mail className="w-16 h-16 text-purple-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-4">Lista de espera exclusiva</h3>
                 <p className="text-purple-200">
-                  Ingresa tu email y te notificaremos cuando el MVP esté listo para probar
+                  Ingresa tu email y te notificaremos cuando el MVP esté listo
                 </p>
               </div>
 

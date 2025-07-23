@@ -5,7 +5,6 @@ import Features from "@/components/sections/Features"
 import HowItWorks from "@/components/sections/HowItWorks"
 import Testimonials from "@/components/sections/Testimonials"
 import WaitlistSection from "@/components/sections/WaitlistSection"
-import CTA from "@/components/sections/CTA"
 import Footer from "@/components/layout/Footer"
 
 export default function HomePage() {
@@ -19,7 +18,7 @@ export default function HomePage() {
           <HowItWorks />
           <Testimonials />
           <WaitlistSection />
-          <CTA />
+          
         </main>
         <Footer />
         <Toaster />

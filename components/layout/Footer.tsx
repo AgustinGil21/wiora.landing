@@ -27,9 +27,10 @@ const Footer = () => {
               <span className="text-2xl font-bold text-white">Wiora</span>
             </div>
             <p className="text-purple-200 mb-4 max-w-md">
-              La inteligencia artificial que transforma la educación, creando planes de estudio personalizados para cada
-              estudiante.
+            “La mente no es un vaso por llenar, sino una lámpara por encender.”
+          
             </p>
+              <span className="text-purple-300"> — Plutarco</span>
           </div>
 
           <div>
