@@ -52,7 +52,7 @@ const Testimonials = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-6 text-lg my-5 rounded-full font-semibold">
+            <Button className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-7 text-lg my-5 rounded-full font-semibold w-full md:w-auto text-wrap">
               Ayudanos a seguir validando Wiora ahora!
             </Button>
           </a>
