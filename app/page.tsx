@@ -13,7 +13,7 @@ export default function HomePage() {
     <>
       <div className="min-h-screen bg-gradient-to-br from-purple-900 via-violet-800 to-indigo-900 text-white overflow-hidden">
         <Navbar />
-        <main className="space-y-32">
+        <main className="space-y-28">
           <Hero />
           <Features />
           <HowItWorks />
