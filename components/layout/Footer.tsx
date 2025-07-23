@@ -94,6 +94,16 @@ const Footer = () => {
                   FAQ
                 </a>
               </li>
+              <li>
+                <a
+                  className="text-purple-200 hover:text-white transition-colors font-medium"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc13Mka5OWnv3SRle2meX1xVmOQc8xCq0FzvEzAxpcui7hbLw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Valida Wiora
+                </a>
+              </li>
             </ul>
           </div>
         </div>
