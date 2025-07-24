@@ -1,0 +1,216 @@
+{
+  "Landing": {
+    "waitlist-button": "Lista de espera",
+    "Nav": {
+      "features":"Características",
+      "how-it-works": "Como funciona",
+      "testimonials": "Testimonios",
+      "faq": "Preguntas frecuentes",
+      "nav-mobile": "Navegación",
+      "lang-mobile": "Idioma"
+    },
+    "Hero": {
+      "badge": "Potenciado por IA",
+      "title": "Wiora transforma tus documentos en experiencias de aprendizaje",
+      "description": "Carga tus PDFs y documentos. Nuestra IA crea procesos de aprendizaje personalizados, cuestionarios interactivos y rutas de estudio adaptadas a tu ritmo.",
+      "buttons":{
+        "join-waitlist": "Únete a la lista de espera",
+        "download-document": "Descarga carta del producto"
+      }
+    },
+    "Stats": {
+      "first": {
+        "title": "62%",
+        "description": "De los estudiantes en línea se siente abrumado por la cantidad de contenido, lo cual impacta negativamente su capacidad de retención."
+      },
+      "second": {
+        "title": "270 Millones",
+        "description": "De personas en Latinoamérica ya incorporan herramientas como ChatGPT, y buscadores con IA para sus rutinas cotidianas,aprendizaje y estudio."
+      },
+      "third": {
+        "title": "73%",
+        "description": "Se siente inseguro al tomar decisiones debido al exceso de información, 9 de cada 10 estudiantes reportan haber sufrido infoxicación."
+      },
+      "bottom-text": "El problema no es la falta de contenido, sino el desorden. Wiora nace de esa necesidad: transformar el caos del conocimiento en un proceso de aprendizaje guiado, donde tu contenido se adapta a tu ritmo y objetivos."
+    },
+    "Features":{
+      "title": "Una solución verdaderamente integral",
+      "description": "Wiora combina IA, estructura, motivación y práctica continua en un solo flujo adaptado para tus necesidades reales.",
+      "content":{
+        "title": "Tu contenido, tu camino",
+        "description": "Carga tus apuntes, PDFs o libros. Wiora los transforma en un recorrido de aprendizaje estructurado y progresivo."
+      },
+      "adaptability":{
+        "title": "IA que se adapta a vos",
+        "description": "Algoritmos inteligentes que entienden tu nivel, ritmo y objetivos para crear una experiencia verdaderamente personalizada."
+      },
+      "goals":{
+        "title": "Objetivos claros",
+        "description": "Define qué querés aprender y recibí un plan detallado dividido en niveles, desde lo básico hasta lo avanzado."
+      },
+      "interactivity":{
+        "title": "Ejercicios interactivos",
+        "description": "Practicá en tiempo real con retroalimentación adaptativa que se ajusta a tus errores y dudas más frecuentes."
+      },
+      "progression":{
+        "title": "Progreso gamificado",
+        "description": "Niveles, logros y métricas de avance que mantienen tu motivación y refuerzan hábitos de estudio positivos."
+      },
+      "autonomy":{
+        "title": "Autonomía total",
+        "description": "No dependés de cursos cerrados ni materiales externos. Con lo que ya tenés, podés empezar a aprender mejor."
+      }
+    },
+    "HowItWorks":{
+      "title" : "Transformamos el contenido en un camino de aprendizaje guiado",
+      "description": "El proceso es simple: vos traés el contenido, nosotros lo convertimos en una experiencia de aprendizaje estructurada y personalizada.",
+      "steps": {
+        "first": {
+          "title": "Cargá tu contenido",
+        "description": "Subí tus apuntes, guías, PDFs o libros. Wiora trabaja con tu material real, no con contenidos prediseñados."
+        },
+        "second": {
+          "title": "Configurá tu proceso",
+        "description": "Describí qué querés aprender, cuál es tu nivel, tiempo disponible y objetivos. La IA se adapta a vos."
+        },
+        "third": {
+          "title": "Aprendé con estructura",
+        "description": "Recibí un camino pedagógico dividido en niveles, con ejercicios interactivos y retroalimentación constante."
+        }
+      },
+      "result": {
+        "title": "El resultado",
+        "description": "Un recorrido temático estructurado con resúmenes jerárquicos, ejercicios adaptativos, progresión gamificada y seguimiento personalizado. Todo basado en tu contenido real, adaptado a tu ritmo y objetivos específicos."
+      }
+    },
+    "Testimonials": {
+      "title": "Una necesidad real",
+      "description": "Inspirada en la experiencia real de estudiantes y autodidactas, Wiora existe para transformar la sobreinformación en un proceso claro y personalizado.",
+      "help-us-button": "Ayudanos a seguir validando Wiora ahora!",
+      "cards": {
+        "kiara-vexina": {
+          "badge": "Estudiante Universitario",
+          "quote": "Me entusiasma mucho la idea. Me la paso organizando apuntes, videos y libros sin saber si voy bien. Si una IA puede armarme un camino y darme feedback, eso cambia todo.",
+          "fullname": "Kiara Vexina",
+          "info": "Estudiante de la UCA"
+        },
+        "marco-femia": {
+          "badge": "Estudiante Universitario",
+          "quote": "Siempre me costó empezar a estudiar porque no sabía cómo organizar todo lo que tenía. Esta idea de convertir mis propios apuntes en un recorrido guiado me parece genial. No es más contenido, es una guía.",
+          "fullname": "Marco Femia",
+          "info": "Estudiante de la UB"
+        },
+        "maximo-glaus": {
+          "badge": "Estudiante Autodidacta",
+          "quote": "No es que me falte voluntad para aprender, sino una herramienta que me ayude a organizar, priorizar y transformar ese contenido en un proceso más amigable y adaptado.",
+          "fullname": "maximo Glaus",
+          "info": "Autodidacta"
+        }
+      },
+      "our-commitment": {
+        "title": "Nuestro compromiso",
+        "description": "Cada botón, cada paso, cada función de Wiora nace de situaciones reales. No estamos adivinando lo que el estudiante necesita: lo vivimos. Por eso no creamos una plataforma perfecta, sino una que escucha y evoluciona con vos.",
+        "author": "- Equipo de Wiora"
+      }
+    },
+    "FAQ": {
+      "title": "Preguntas frecuentes",
+      "description": "Aquí encontrarás respuestas a las preguntas más comunes sobre Wiora.",
+      "questions": {
+        "what-is-wiora": {
+          "question": "¿Qué es Wiora?",
+          "answer": "Wiora es una plataforma educativa impulsada por inteligencia artificial que convierte tus apuntes, guías o PDFs en un plan de estudio estructurado y adaptado a vos. Está diseñada para quienes estudian con autonomía y buscan claridad, orden y acompañamiento real en su proceso."
+        },
+        "how-it-works": {
+          "question": "¿Cómo funciona?",
+          "answer": "Solo tenés que subir tu contenido de estudio (PDFs, textos, guías, etc.), y Wiora lo transforma en un recorrido guiado con niveles, ejercicios y retroalimentación. La IA organiza el contenido, prioriza lo importante y genera actividades para ayudarte a aprender de forma activa."
+        },
+        "free": {
+          "question": "¿Es gratis?",
+          "answer": "Sí. Wiora tiene una versión gratuita que te permite acceder a todas las funciones esenciales. En el futuro ofreceremos una versión premium con beneficios adicionales, pero el acceso básico será siempre gratuito y sin tarjeta de crédito."
+        },
+        "replacement": {
+          "question": "¿Wiora reemplaza a un profesor o una carrera?",
+          "answer": "No. Wiora es una herramienta de apoyo que complementa tu aprendizaje. No busca reemplazar a los profesores, sino ofrecer un recurso adicional que te ayude a organizar y asimilar mejor la información."
+        },
+        "unique": {
+          "question": "¿Qué hace diferente a Wiora de otras plataformas educativas?",
+          "answer": "La mayoría de las plataformas ofrecen cursos prediseñados. Wiora, en cambio, parte de tu propio contenido y lo transforma en una experiencia estructurada, dinámica y adaptativa. Es una plataforma que se adapta a vos, no al revés."
+        },
+        "previous-knowledge": {
+          "question": "¿Necesito tener conocimientos técnicos para usar Wiora?",
+          "answer": "No. Wiora está pensada para que cualquier persona pueda usarla fácilmente. Solo subís tu material de estudio y la plataforma se encarga del resto. Es como tener un tutor digital que parte de lo que vos ya tenés."
+        }
+      },
+      "more-questions": {
+        "title": "¿Tenés más preguntas?",
+        "description": "Únete a nuestra comunidad en Discord o escribinos directamente. Estamos aquí para ayudarte.",
+        "buttons": {
+          "contact": "Contacto"
+        }
+      }
+    },
+    "Waitlist": {
+      "form": {
+        "title": "Lista de espera exclusiva",
+        "description": "Ingresa tu email y te notificaremos cuando el MVP esté listo",
+        "input-placeholder": "tu@gmail.com",
+        "submit-button": {
+          "normal": "Unirme",
+          "loading": "Enviando"
+        }
+      },
+      "benefits" : {
+        "early-access": {
+          "title": "Acceso temprano",
+          "description": "Sé de los primeros en descubrir cómo será el futuro del estudio."
+        },
+        "community": {
+          "title": "Comunidad Wiora",
+          "description": "Únete a nuestra comunidad y ayuda a co-crear la experiencia"
+        },
+        "your-voice-matter": {
+          "title": "Tu voz importa",
+          "description": "Sé parte del grupo que diseña la experiencia Wiora desde cero."
+        }
+      },
+      "disclaimer": "🔒 Tu email está seguro con nosotros. No spam, solo actualizaciones importantes sobre Wiora."
+    },
+    "Footer": {
+      "quote-block": {
+        "quote": "Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber.",
+        "author": "— Albert Einstein"
+      },
+      "sections": {
+        "product": {
+          "title": "Producto",
+          "features":"Características",
+          "how-it-works": "Como funciona",
+          "testimonials": "Testimonios",
+          "faq": "Preguntas frecuentes"
+        },
+        "support": {
+          "title": "Soporte",
+          "contact": "Contacto",
+          "faq": "Preguntas frecuentes",
+          "validate-wiora": "Valida Wiora"
+        }
+      },
+      "rights": "Wiora. Todos los derechos reservados."
+    },
+    "Toasts": {
+      "waitlist-submit-success": {
+        "title": "¡Bienvenido a la revolución! 🚀",
+        "description": "Te notificaremos cuando Wiora esté listo para transformar tu forma de estudiar."
+      },
+      "waitlist-submit-invalid-email": {
+        "title": "Email inválido",
+        "description": "Por favor, ingresa un email válido."
+      },
+      "waitlist-submit-something-went-wrong": {
+        "title": "Algo salió mal",
+        "description": "No pudimos enviar el mail a destino. Por favor intentalo más tarde."
+      }
+    }
+  }
+}
