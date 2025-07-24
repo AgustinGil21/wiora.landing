@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { SocialMediaBtnsGroup } from "../SocialMediaBtnsGroup"
+import { handleNavigationClick } from "@/lib/handlenavigationClick"
 
 const navigationItems = [
   { name: "Características", href: "#features" },
@@ -17,16 +18,15 @@ const languages = [
 
 interface MobileNavigationProps {
   isOpen: boolean
+  setIsOpen: (isOpen:boolean) => void
   selectedLanguage: string
   onLanguageSelect: (langCode: string) => void
 }
 
-export const MobileNavigation = ({ isOpen, selectedLanguage, onLanguageSelect }: MobileNavigationProps) => {
-  const handleNavigationClick = (href: string) => {
-    const element = document.getElementById(href.substring(1))
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
+export const MobileNavigation = ({ isOpen, selectedLanguage, onLanguageSelect, setIsOpen }: MobileNavigationProps) => {
+  const handleClick = (href: string) => {
+    handleNavigationClick(href)
+    if (isOpen) setIsOpen(false)
   }
 
   return (
@@ -49,7 +49,7 @@ export const MobileNavigation = ({ isOpen, selectedLanguage, onLanguageSelect }:
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    onClick={() => handleNavigationClick(item.href)}
+                    onClick={() => handleClick(item.href)}
                     className="flex items-center justify-center gap-3 p-3 rounded-md text-purple-200 hover:text-white transition-all duration-300 hover:bg-purple-800/50 hover:scale-105 text-xl font-medium w-full"
                   >
                     <span className="font-medium">{item.name}</span>
@@ -106,7 +106,7 @@ export const MobileNavigation = ({ isOpen, selectedLanguage, onLanguageSelect }:
                   transition={{ delay: 0.6 }}
                   className="w-full max-w-[400px]"
                 >
-                  <Button className="w-full bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium hover:cursor-pointer">
+                  <Button className="w-full bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium hover:cursor-pointer" onClick={() => handleClick('#waitlist')}>
                     Lista de espera
                   </Button>
                 </motion.div>

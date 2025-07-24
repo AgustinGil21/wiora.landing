@@ -6,7 +6,6 @@ import { ArrowRight, BookOpen, Users, TrendingUp } from "lucide-react";
 import { Brain } from "lucide-react";
 
 const Hero = () => {
-
   const handleScrollToWaitlist = () => {
     const waitlistSection = document.getElementById("waitlist");
     if (waitlistSection) {
@@ -22,7 +21,7 @@ const Hero = () => {
     },
   };
 
-  const itemVariants:Variants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,

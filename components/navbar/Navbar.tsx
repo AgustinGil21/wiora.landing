@@ -6,6 +6,7 @@ import { Menu, XIcon } from "lucide-react"
 import { DesktopNavigation } from "./DesktopNavigation"
 import { MobileNavigation } from "./MobileNavigation"
 import WioraLogo from "../WioraLogo"
+import { handleNavigationClick } from "@/lib/handlenavigationClick"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -55,7 +56,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <div className="hidden md:flex items-center">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button className="bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium">
+                <Button className="bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium" onClick={() => handleNavigationClick('#waitlist')}>
                   Lista de espera
                 </Button>
               </motion.div>
@@ -77,7 +78,7 @@ const Navbar = () => {
       </motion.nav>
 
       {/* Mobile Navigation */}
-      <MobileNavigation isOpen={isOpen} selectedLanguage={selectedLanguage} onLanguageSelect={handleLanguageSelect} />
+      <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} selectedLanguage={selectedLanguage} onLanguageSelect={handleLanguageSelect} />
     </>
   )
 }
