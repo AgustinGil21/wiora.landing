@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { useLockScroll } from '@/hooks/use-lock-scroll';
+import { SocialMediaBtnsGroup } from '../SocialMediaBtnsGroup';
 
 interface Item {
   name: string;
@@ -46,16 +47,19 @@ export const NavbarMobile = ({
           </a>
         ))}
       </div>
+      <footer className='flex flex-col gap-6'>
+          <SocialMediaBtnsGroup className='self-center'/>
       <div className='pt-4 pb-3 border-t border-purple-700'>
         <div className='mt-3 px-2 space-y-1 flex justify-center'>
           <Button
             onClick={handleWaitlistClick}
             className='w-full bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium max-w-[400px] hover:cursor-pointer'
-          >
+            >
             Lista de espera
           </Button>
         </div>
       </div>
+    </footer>
     </motion.div>
   );
 };

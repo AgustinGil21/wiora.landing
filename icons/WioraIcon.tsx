@@ -1,4 +1,6 @@
-export const WioraIcon = ({ className }: { className: string }) => {
+import { IIcons } from "./icons-interface";
+
+export const WioraIcon = ({ className }: IIcons) => {
   return (
     <svg
       xmlSpace='preserve'
