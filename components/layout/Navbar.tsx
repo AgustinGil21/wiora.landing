@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, XIcon } from 'lucide-react';
 import WioraLogo from '../WioraLogo';
 import { NavbarMobile } from './NavbarMobile';
+import { handleNavigationClick } from '@/lib/handlenavigationClick';
 
 const Navbar = () => {
   const { toast } = useToast();
@@ -22,33 +23,21 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleWaitlistClick = () => {
+    handleNavigationClick('#waitlist')
+    if (isOpen) setIsOpen(false);
+  }
+  
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
-    e.preventDefault();
-    const targetId = href.substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      toast({
-        title: '🚧 Sección no encontrada',
-        description:
-          'Parece que esta sección no existe. ¡Pero no te preocupes!',
-        duration: 3000,
-      });
-    }
+    e.preventDefault()
+    console.log(isOpen)
+    handleNavigationClick(href)
     if (isOpen) setIsOpen(false);
   };
 
-  const handleWaitlistClick = () => {
-    const waitlistSection = document.getElementById('waitlist');
-    if (waitlistSection) {
-      waitlistSection.scrollIntoView({ behavior: 'smooth' });
-    }
-    if (isOpen) setIsOpen(false);
-  };
 
   const navItems = [
     { name: 'Características', href: '#features' },

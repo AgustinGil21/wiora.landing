@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.screen-height-with-header {
+  min-height: calc(100dvh - 64px);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

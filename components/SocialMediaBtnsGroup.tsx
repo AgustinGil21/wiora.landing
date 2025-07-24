@@ -33,7 +33,7 @@ const btns = [
 export const SocialMediaBtnsGroup = ({className}:{className?:string}) => {
   return (
     <section className={`flex gap-2 ${className}`}>
-      {btns.map(({ ariaLabel, href, icon }) => <SocialMediaBtn href={href} ariaLabel={ariaLabel}>
+      {btns.map(({ ariaLabel, href, icon }) => <SocialMediaBtn key={ariaLabel} href={href} ariaLabel={ariaLabel}>
         {icon}
       </SocialMediaBtn>)}
     </section>

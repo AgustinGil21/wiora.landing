@@ -2,6 +2,7 @@
 import { Navigation } from "lucide-react"
 import { motion } from "framer-motion"
 import { Dropdown } from "./Dropdown"
+import { handleNavigationClick } from "@/lib/handlenavigationClick"
 
 const navigationItems = [
   { name: "Características", href: "#features" },
@@ -15,12 +16,7 @@ interface NavigationDropdownProps {
 }
 
 export const NavigationDropdown = ({ isScrolled }: NavigationDropdownProps) => {
-  const handleNavigationClick = (href: string) => {
-    const element = document.getElementById(href.substring(1))
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
+
 
   const dropdownItems = navigationItems.map((item) => ({
     key: item.name,

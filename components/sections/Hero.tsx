@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 py-10 pt-32 md:pt-24"
+      className="relative flex items-center justify-center px-4 pb-10 pt-[95px] md:pt-24 hero"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
