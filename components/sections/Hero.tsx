@@ -50,14 +50,14 @@ const Hero = () => {
       icon: BookOpen,
       value: "73%",
       label:
-        "Se siente inseguro al tomar decisiones debido al exceso de información, 9 de cada 10 estudiantes reportan haber sufrido infoxicación",
+        "De los estudiantes siente inseguro al tomar decisiones debido al exceso de información, 9 de cada 10 reportan haber sufrido infoxicación.",
     },
   ];
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 py-10 pt-32 md:pt-24"
+      className="relative min-h-screen flex items-center justify-center px-4 py-10 pt-32 md:pt-16"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
