@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, BookOpen, Users, TrendingUp } from "lucide-react";
 import { Brain } from "lucide-react";
-import { CheckCircle } from "lucide-react";
 
 const Hero = () => {
   const { toast } = useToast();
