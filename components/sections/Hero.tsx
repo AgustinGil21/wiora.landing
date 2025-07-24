@@ -1,13 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
+
+import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, BookOpen, Users, TrendingUp } from "lucide-react";
 import { Brain } from "lucide-react";
-import { CheckCircle } from "lucide-react";
 
 const Hero = () => {
-  const { toast } = useToast();
 
   const handleScrollToWaitlist = () => {
     const waitlistSection = document.getElementById("waitlist");
@@ -24,7 +22,7 @@ const Hero = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants:Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,

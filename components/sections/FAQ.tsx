@@ -12,11 +12,10 @@ import {
   Shield,
   Globe,
   DollarSign,
-  Upload,
   Users,
-  Clock,
-  User,
+  MailIcon,
 } from "lucide-react";
+import { DiscordIcon } from "@/icons/DiscordIcon";
 
 const FAQ = () => {
   const faqItems = [
@@ -154,7 +153,7 @@ const FAQ = () => {
                 target="_blank"
               >
                 <button className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
-                  <MessageCircle className="w-5 h-5" />
+                  <DiscordIcon className="size-6 fill-white" />
                   Discord
                 </button>
               </a>
@@ -163,7 +162,8 @@ const FAQ = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300">
+                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex gap-2 items-center">
+                  <MailIcon className="size-6"/>
                   Contacto
                 </button>
               </a>

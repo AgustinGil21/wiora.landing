@@ -1,8 +1,8 @@
 "use client";
 
-import type React from "react";
 import { useToast } from "@/hooks/use-toast";
 import WioraLogo from "../WioraLogo";
+import { SocialMediaBtnsGroup } from "../SocialMediaBtnsGroup";
 
 const Footer = () => {
   const { toast } = useToast();
@@ -110,7 +110,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-purple-300/20 mt-8 pt-8 text-center">
+        <div className="border-t border-purple-300/20 mt-8 pt-10 text-center flex flex-col justify-between items-center gap-4">
+          <SocialMediaBtnsGroup />
           <p className="text-purple-200">
             © {year} Wiora. Todos los derechos reservados.
           </p>
