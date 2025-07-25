@@ -1,49 +1,48 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { useToast } from "@/hooks/use-toast";
 import { BookOpen, Brain, Target, Users, Clock, Zap } from "lucide-react";
 
 const Features = () => {
+  const { toast } = useToast();
+  const t = useTranslations("Features");
+
   const featuresData = [
     {
       icon: BookOpen,
-      title: "Tu contenido, tu camino",
-      description:
-        "Carga tus apuntes, PDFs o libros. Wiora los transforma en un recorrido de aprendizaje estructurado y progresivo.",
+      title: t("content.title"),
+      description: t("content.description"),
       color: "from-purple-500 to-violet-600",
     },
     {
       icon: Brain,
-      title: "IA que se adapta a vos",
-      description:
-        "Algoritmos inteligentes que entienden tu nivel, ritmo y objetivos para crear una experiencia verdaderamente personalizada.",
+      title: t("adaptability.title"),
+      description: t("adaptability.description"),
       color: "from-violet-500 to-indigo-600",
     },
     {
       icon: Target,
-      title: "Objetivos claros",
-      description:
-        "Define qué querés aprender y recibí un plan detallado dividido en niveles, desde lo básico hasta lo avanzado.",
+      title: t("goals.title"),
+      description: t("goals.description"),
       color: "from-indigo-500 to-purple-600",
     },
     {
       icon: Zap,
-      title: "Ejercicios interactivos",
-      description:
-        "Practicá en tiempo real con retroalimentación adaptativa que se ajusta a tus errores y dudas más frecuentes.",
+      title: t("interactivity.title"),
+      description: t("interactivity.description"),
       color: "from-purple-600 to-violet-500",
     },
     {
       icon: Clock,
-      title: "Progreso gamificado",
-      description:
-        "Niveles, logros y métricas de avance que mantienen tu motivación y refuerzan hábitos de estudio positivos.",
+      title: t("progression.title"),
+      description: t("progression.description"),
       color: "from-violet-600 to-indigo-500",
     },
     {
       icon: Users,
-      title: "Autonomía total",
-      description:
-        "No dependés de cursos cerrados ni materiales externos. Con lo que ya tenés, podés empezar a aprender mejor.",
+      title: t("autonomy.title"),
+      description: t("autonomy.description"),
       color: "from-indigo-600 to-purple-500",
     },
   ];

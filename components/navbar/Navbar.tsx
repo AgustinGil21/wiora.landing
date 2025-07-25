@@ -13,7 +13,7 @@ import { useTranslations } from 'next-intl';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const t = useTranslations('Testimonials');
+  const t = useTranslations();
   const router = useRouter();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,7 +77,7 @@ const Navbar = () => {
                   className='bg-white text-purple-900 hover:bg-purple-50 rounded-full px-6 py-2 font-medium'
                   onClick={() => handleNavigationClick('#waitlist')}
                 >
-                  Lista de espera
+                  {t('waitlist-button')}
                 </Button>
               </motion.div>
             </div>

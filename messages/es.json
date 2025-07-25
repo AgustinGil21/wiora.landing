@@ -5,12 +5,15 @@
     "how-it-works": "Como funciona",
     "testimonials": "Testimonios",
     "faq": "Preguntas frecuentes",
+    "nav-desktop": "Navegación",
+    "nav-social": "Redes Sociales",
     "nav-mobile": "Navegación",
     "lang-mobile": "Idioma"
   },
   "Hero": {
     "badge": "Potenciado por IA",
-    "title": "Wiora transforma tus documentos en experiencias de aprendizaje",
+    "title-part-1": "Wiora transforma tus documentos en ",
+    "title-part-2": "experiencias de aprendizaje",
     "description": "Carga tus PDFs y documentos. Nuestra IA crea procesos de aprendizaje personalizados, cuestionarios interactivos y rutas de estudio adaptadas a tu ritmo.",
     "buttons": {
       "join-waitlist": "Únete a la lista de espera",
@@ -33,7 +36,8 @@
     "bottom-text": "El problema no es la falta de contenido, sino el desorden. Wiora nace de esa necesidad: transformar el caos del conocimiento en un proceso de aprendizaje guiado, donde tu contenido se adapta a tu ritmo y objetivos."
   },
   "Features": {
-    "title": "Una solución verdaderamente integral",
+    "title-part-1": "Una solución",
+    "title-part-2": " verdaderamente integral",
     "description": "Wiora combina IA, estructura, motivación y práctica continua en un solo flujo adaptado para tus necesidades reales.",
     "content": {
       "title": "Tu contenido, tu camino",
@@ -61,7 +65,8 @@
     }
   },
   "HowItWorks": {
-    "title": "Transformamos el contenido en un camino de aprendizaje guiado",
+    "title-part-1": "Transformamos el contenido en un ",
+    "title-part-2": "camino de aprendizaje guiado",
     "description": "El proceso es simple: vos traés el contenido, nosotros lo convertimos en una experiencia de aprendizaje estructurada y personalizada.",
     "steps": {
       "first": {
@@ -83,7 +88,8 @@
     }
   },
   "Testimonials": {
-    "title": "Una necesidad real",
+    "title-part-1": "Una ",
+    "title-part-2": "necesidad real",
     "description": "Inspirada en la experiencia real de estudiantes y autodidactas, Wiora existe para transformar la sobreinformación en un proceso claro y personalizado.",
     "help-us-button": "Ayudanos a seguir validando Wiora ahora!",
     "cards": {
@@ -151,7 +157,8 @@
   },
   "Waitlist": {
     "form": {
-      "title": "Lista de espera exclusiva",
+      "title-part-1": "Sé parte del ",
+      "title-part-2": "cambio",
       "description": "Ingresa tu email y te notificaremos cuando el MVP esté listo",
       "input-placeholder": "tu@gmail.com",
       "submit-button": {

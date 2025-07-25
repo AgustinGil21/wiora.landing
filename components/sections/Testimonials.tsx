@@ -39,7 +39,8 @@ const Testimonials = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-            Una <span className="text-purple-300">necesidad real</span>
+            {t("title-part-1")}
+            <span className="text-purple-300"> {t("title-part-2")}</span>
           </h2>
 
           <p className="text-xl text-purple-100 max-w-3xl mx-auto">

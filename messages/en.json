@@ -5,12 +5,15 @@
     "how-it-works": "How it works",
     "testimonials": "Testimonials",
     "faq": "Frequently ask",
+    "nav-desktop": "Navigation",
+    "nav-social": "Social",
     "nav-mobile": "Navigation",
     "lang-mobile": "Language"
   },
   "Hero": {
     "badge": "AI-powered learning",
-    "title": "Wiora transforms your documents into learning experiences",
+    "title-part-1": "Wiora transforms your documents ",
+    "title-part-2": "into learning experiences",
     "description": "Upload your PDFs and documents. Our AI creates personalized learning processes, interactive quizzes, and study paths tailored to your pace.",
     "buttons": {
       "join-waitlist": "Join the waitlist",
@@ -33,7 +36,8 @@
     "bottom-text": "The problem isn’t a lack of content, but disorganization. Wiora was born from that need: to transform the chaos of knowledge into a guided learning process, where your content adapts to your pace and goals."
   },
   "Features": {
-    "title": "A truly all-in-one solution",
+    "title-part-1": "A truly ",
+    "title-part-2": "all-in-one solution",
     "description": "Wiora combines AI, structure, motivation, and continuous practice into a single flow tailored to your real needs.",
     "content": {
       "title": "Your content, your path",
@@ -61,7 +65,8 @@
     }
   },
   "HowItWorks": {
-    "title": "We transform content into a guided learning path",
+    "title-part-1": "We transform content into ",
+    "title-part-2": "a guided learning path",
     "description": "The process is simple: you bring the content, and we turn it into a structured, personalized learning experience.",
     "steps": {
       "first": {
@@ -83,7 +88,8 @@
     }
   },
   "Testimonials": {
-    "title": "A real need",
+    "title-part-1": "A ",
+    "title-part-2": "real need",
     "description": "Inspired by the real experiences of students and self-learners, Wiora exists to turn information overload into a clear and personalized process.",
     "help-us-button": "Help us continue validating Wiora now!",
     "cards": {
@@ -150,6 +156,9 @@
     }
   },
   "Waitlist": {
+    "title-part-1": "Be part of the ",
+    "title-part-2": "change",
+    "description": "Join the waitlist and be among the first to experience a new way of learning. We're building something special, and we want you to be part of the story.",
     "form": {
       "title": "Exclusive waitlist",
       "description": "Enter your email and we’ll notify you when the MVP is ready",

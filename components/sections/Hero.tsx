@@ -4,8 +4,11 @@ import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, TrendingUp } from "lucide-react";
 import { Brain } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations();
+
   const handleScrollToWaitlist = () => {
     const waitlistSection = document.getElementById("waitlist");
     if (waitlistSection) {
@@ -33,28 +36,25 @@ const Hero = () => {
   const stats = [
     {
       icon: Users,
-      value: "62%",
-      label:
-        "De los estudiantes en línea se siente abrumado por la cantidad de contenido, lo cual impacta negativamente su capacidad de retención.",
+      value: t("Stats.first.title"),
+      label: t("Stats.first.description"),
     },
     {
       icon: TrendingUp,
-      value: "270 Millones",
-      label:
-        "De personas en Latinoamérica ya incorporan herramientas como ChatGPT, y buscadores con IA para sus rutinas cotidianas,aprendizaje y estudio.",
+      value: t("Stats.second.title"),
+      label: t("Stats.second.description"),
     },
     {
       icon: BookOpen,
-      value: "73%",
-      label:
-        "De los estudiantes siente inseguro al tomar decisiones debido al exceso de información, 9 de cada 10 reportan haber sufrido infoxicación.",
+      value: t("Stats.third.title"),
+      label: t("Stats.third.description"),
     },
   ];
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 py-10 pt-32 md:pt-16"
+      className="relative flex items-center justify-center px-4 pb-10 pt-[95px] md:pt-24 hero"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -78,17 +78,16 @@ const Hero = () => {
           >
             <div className="inline-flex items-center rounded-full border border-purple-300 bg-purple-800 px-3 py-1 text-sm text-white">
               <Brain className="w-4 h-4 mr-2" />
-              Aprendizaje potenciado por IA
+              {t("Hero.badge")}
             </div>
             {/* Main Heading */}
             <motion.div variants={itemVariants} className="space-y-8">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold">
                 <span className="bg-gradient-to-r from-white via-purple-100 to-violet-200 bg-clip-text text-transparent">
-                  Wiora transforma tus documentos en
+                  {t("Hero.title-part-1")}
                 </span>
-                <br />
                 <span className="bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">
-                  experiencias de aprendizaje
+                  {t("Hero.title-part-2")}
                 </span>
               </h1>
             </motion.div>
@@ -98,9 +97,7 @@ const Hero = () => {
               className="text-xl md:text-2xl text-purple-100 max-w-4xl mx-auto leading-relaxed"
               variants={itemVariants}
             >
-              Carga tus PDFs y documentos. Nuestra IA crea procesos de
-              aprendizaje personalizados, cuestionarios interactivos y rutas de
-              estudio adaptadas a tu ritmo.
+              {t("Hero.description")}
             </motion.p>
 
             {/* CTA Buttons */}
@@ -114,7 +111,7 @@ const Hero = () => {
                   size="lg"
                   className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-6 text-lg rounded-full"
                 >
-                  Únete a la lista de espera
+                  {t("Hero.buttons.join-waitlist")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
 
@@ -124,7 +121,7 @@ const Hero = () => {
                     variant="outline"
                     className="bg-transparent border-white text-white hover:bg-purple-800 hover:text-white px-8 py-6 text-lg rounded-full"
                   >
-                    Descargar carta de producto
+                    {t("Hero.buttons.download-document")}
                   </Button>
                 </a>
               </div>
@@ -161,10 +158,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <p className="text-lg text-purple-200 leading-relaxed">
-              El problema no es la falta de contenido, sino el desorden. Wiora
-              nace de esa necesidad: transformar el caos del conocimiento en un
-              proceso de aprendizaje guiado, donde tu contenido se adapta a tu
-              ritmo y objetivos.
+              {t("Stats.bottom-text")}
             </p>
           </motion.div>
         </motion.div>
