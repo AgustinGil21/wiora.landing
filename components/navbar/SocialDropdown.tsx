@@ -2,6 +2,9 @@
 import { motion } from "framer-motion"
 import { Github, Instagram, MessageCircle } from "lucide-react"
 import { Dropdown } from "./Dropdown"
+import { DiscordIcon } from "@/icons/DiscordIcon"
+import { GithubIcon } from "@/icons/GithubIcon"
+import { InstagramIcon } from "@/icons/InstagramIcon"
 
 // Icono personalizado para X (Twitter)
 const XIcon = () => (
@@ -11,10 +14,10 @@ const XIcon = () => (
 )
 
 const socialNetworks = [
-  { name: "Discord", icon: MessageCircle, url: "#", color: "hover:text-indigo-400" },
-  { name: "X", icon: XIcon, url: "#", color: "hover:text-gray-300" },
-  { name: "Instagram", icon: Instagram, url: "#", color: "hover:text-pink-400" },
-  { name: "GitHub", icon: Github, url: "#", color: "hover:text-gray-300" },
+  { name: "Discord", icon: DiscordIcon, url: "#", color: "hover:text-indigo-400 hover:fill-indigo-400 fill-white" },
+  { name: "X", icon: XIcon, url: "#", color: "hover:text-black hover:fill-black fill-white" },
+  { name: "Instagram", icon: InstagramIcon, url: "#", color: "hover:text-pink-400 hover:fill-pink-400 fill-white" },
+  { name: "GitHub", icon: GithubIcon, url: "#", color: "hover:text-black hover:fill-black fill-white"},
 ]
 
 interface SocialDropdownProps {

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import { Button } from "../ui/button";
+import { useTranslations } from "next-intl";
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -28,6 +29,8 @@ const Testimonials = () => {
     },
   ];
 
+  const t = useTranslations("Testimonials");
+
   return (
     <section id="testimonials" className="py-18 px-4">
       <div className="max-w-6xl mx-auto">
@@ -43,9 +46,7 @@ const Testimonials = () => {
           </h2>
 
           <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-            Inspirada en la experiencia real de estudiantes y autodidactas,
-            Wiora existe para transformar la sobreinformación en un proceso
-            claro y personalizado.
+            {t("description")}
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSc13Mka5OWnv3SRle2meX1xVmOQc8xCq0FzvEzAxpcui7hbLw/viewform"
