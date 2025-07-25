@@ -5,31 +5,28 @@ import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 
 const Testimonials = () => {
+  const t = useTranslations("Testimonials");
+
   const testimonialsData = [
     {
-      name: "Kiara Vexina",
-      role: "Estudiante de la UCA",
-      content:
-        "Me entusiasma mucho la idea. Me la paso organizando apuntes, videos y libros sin saber si voy bien. Si una IA puede armarme un camino y darme feedback, eso cambia todo.",
-      category: "Estudiante",
+      name: t("cards.kiara-vexina.fullname"),
+      role: t("cards.kiara-vexina.info"),
+      content: t("cards.kiara-vexina.quote"),
+      category: t("cards.kiara-vexina.badge"),
     },
     {
-      name: "Marcos Femia",
-      role: "Estudiante de la UB ",
-      content:
-        "Siempre me costó empezar a estudiar porque no sabía cómo organizar todo lo que tenía. Esta idea de convertir mis propios apuntes en un recorrido guiado me parece genial. No es más contenido, es una guía.",
-      category: "Estudiante",
+      name: t("cards.marco-femia.fullname"),
+      role: t("cards.marco-femia.info"),
+      content: t("cards.marco-femia.quote"),
+      category: t("cards.marco-femia.badge"),
     },
     {
-      name: "Maximo Glaus",
-      role: "Autodidacta",
-      content:
-        "No es que me falte voluntad para aprender, sino una herramienta que me ayude a organizar, priorizar y transformar ese contenido en un proceso más amigable y adaptado.",
-      category: "Estudiante Autodidacta",
+      name: t("cards.maximo-glaus.fullname"),
+      role: t("cards.maximo-glaus.info"),
+      content: t("cards.maximo-glaus.quote"),
+      category: t("cards.maximo-glaus.badge"),
     },
   ];
-
-  const t = useTranslations("Testimonials");
 
   return (
     <section id="testimonials" className="py-18 px-4">
@@ -54,7 +51,7 @@ const Testimonials = () => {
             rel="noopener noreferrer"
           >
             <Button className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-7 text-lg my-5 rounded-full font-semibold w-full md:w-auto text-wrap">
-              Ayudanos a seguir validando Wiora ahora!
+              {t("help-us-button")}
             </Button>
           </a>
         </motion.div>
@@ -101,15 +98,15 @@ const Testimonials = () => {
         >
           <div className="bg-gradient-to-r from-purple-600/20 to-violet-600/20 backdrop-blur-sm rounded-2xl p-10 border border-purple-300/30 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-6">
-              Nuestro compromiso
+              {t("our-commitment.title")}
             </h3>
             <p className="text-purple-200 leading-relaxed text-lg mb-6">
-              "Cada botón, cada paso, cada función de Wiora nace de situaciones
-              reales. No estamos adivinando lo que el estudiante necesita: lo
-              vivimos. Por eso no creamos una plataforma perfecta, sino una que
-              escucha y evoluciona con vos."
+              {t("our-commitment.description")}
             </p>
-            <p className="text-purple-300 font-medium">- Equipo de Wiora</p>
+            <p className="text-purple-300 font-medium">
+              {" "}
+              {t("our-commitment.author")}
+            </p>
           </div>
         </motion.div>
       </div>

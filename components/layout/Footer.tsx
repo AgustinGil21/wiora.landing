@@ -1,13 +1,14 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import { useToast } from "@/hooks/use-toast";
 import WioraLogo from "../WioraLogo";
 import { SocialMediaBtnsGroup } from "../SocialMediaBtnsGroup";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
   const { toast } = useToast();
 
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   const handleFeatureClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -48,16 +49,14 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-purple-200 mb-4 max-w-md">
-              “Nunca consideres el estudio como una obligación, sino como una
-              oportunidad para penetrar en el bello y maravilloso mundo del
-              saber.”
+              {t("quote-block.quote")}
             </p>
-            <span className="text-purple-300"> — Albert Einstein</span>
+            <span className="text-purple-300">{t("quote-block.author")}</span>
           </div>
 
           <div>
             <span className="text-white font-semibold mb-4 block">
-              Producto
+              {t("sections.product.title")}
             </span>
             <ul className="flex flex-col  space-y-2">
               {navItems.map((item) => (
@@ -75,7 +74,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <span className="text-white font-semibold mb-4 block">Soporte</span>
+            <span className="text-white font-semibold mb-4 block">
+              {" "}
+              {t("sections.support.title")}
+            </span>
             <ul className="flex flex-col space-y-2">
               <li>
                 <a
@@ -84,7 +86,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-purple-200 hover:text-white transition-colors font-medium"
                 >
-                  Contacto
+                  {t("sections.support.contact")}
                 </a>
               </li>
               <li>
@@ -93,7 +95,7 @@ const Footer = () => {
                   onClick={(e) => handleLinkClick(e, "#faq")}
                   className="text-purple-200 hover:text-white transition-colors font-medium"
                 >
-                  FAQ
+                  {t("sections.support.faq")}
                 </a>
               </li>
               <li>
@@ -103,7 +105,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Valida Wiora
+                  {t("sections.support.validate-wiora")}
                 </a>
               </li>
             </ul>
@@ -113,7 +115,7 @@ const Footer = () => {
         <div className="border-t border-purple-300/20 mt-8 pt-10 text-center flex flex-col justify-between items-center gap-4">
           <SocialMediaBtnsGroup />
           <p className="text-purple-200">
-            © {year} Wiora. Todos los derechos reservados.
+            © {year} {t("rights")}
           </p>
         </div>
       </div>
