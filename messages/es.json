@@ -108,7 +108,7 @@
       "maximo-glaus": {
         "badge": "Estudiante Autodidacta",
         "quote": "No es que me falte voluntad para aprender, sino una herramienta que me ayude a organizar, priorizar y transformar ese contenido en un proceso más amigable y adaptado.",
-        "fullname": "maximo Glaus",
+        "fullname": "Maximo Glaus",
         "info": "Autodidacta"
       }
     },
@@ -194,8 +194,7 @@
         "title": "Producto",
         "features": "Características",
         "how-it-works": "Como funciona",
-        "testimonials": "Testimonios",
-        "faq": "Preguntas frecuentes"
+        "testimonials": "Testimonios"
       },
       "support": {
         "title": "Soporte",
