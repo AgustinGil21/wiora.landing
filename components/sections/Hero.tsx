@@ -86,7 +86,6 @@ const Hero = () => {
                 <span className='bg-gradient-to-r from-white via-purple-100 to-violet-200 bg-clip-text text-transparent'>
                   {t('Hero.title-part-1')}
                 </span>
-                <br />
                 <span className='bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent'>
                   {t('Hero.title-part-2')}
                 </span>
