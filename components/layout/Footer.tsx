@@ -10,16 +10,6 @@ const Footer = () => {
 
   const year = new Date().getFullYear();
 
-  const handleFeatureClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    toast({
-      title: '🚧 Esta función aún no está implementada',
-      description:
-        '¡Pero no te preocupes! Puedes solicitarla en tu próximo prompt! 🚀',
-      duration: 3000,
-    });
-  };
-
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
@@ -36,7 +26,6 @@ const Footer = () => {
     { name: 'features', href: '#features' },
     { name: 'how-it-works', href: '#how-it-works' },
     { name: 'testimonials', href: '#testimonials' },
-    { name: 'faq', href: '#faq' },
   ];
 
   return (
