@@ -51,10 +51,12 @@ const Navbar = () => {
             {/* Logo and Desktop Navigation */}
             <div className='flex items-center'>
               {/* Logo */}
-              <WioraLogo
-                textClassName='!text-xl lg:!text-2xl'
-                iconClassName='!h-10 !w-10 lg:!h-12 lg:!w-12'
-              />
+              <motion.div onClick={() => setIsOpen(false)}>
+                <WioraLogo
+                  textClassName='!text-xl lg:!text-2xl'
+                  iconClassName='!h-10 !w-10 lg:!h-12 lg:!w-12'
+                />
+              </motion.div>
 
               {/* Vertical Separator */}
               <div className='hidden md:block mx-6 h-8 w-0.5 bg-purple-300/30'></div>
