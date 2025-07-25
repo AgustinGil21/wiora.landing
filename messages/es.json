@@ -156,10 +156,12 @@
     }
   },
   "Waitlist": {
+    "title-part-1": "Sé parte del ",
+    "title-part-2": "cambio",
+    "description": "Ingresa tu email y te notificaremos cuando el MVP esté listo",
     "form": {
-      "title-part-1": "Sé parte del ",
-      "title-part-2": "cambio",
-      "description": "Ingresa tu email y te notificaremos cuando el MVP esté listo",
+      "title": "Lista de espera exclusiva",
+      "description": "Ingresa tu email y nosotros te avisaremos cuando este listo el MVP para probar.",
       "input-placeholder": "tu@gmail.com",
       "submit-button": {
         "normal": "Unirme",
